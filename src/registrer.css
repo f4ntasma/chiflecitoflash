@@ -1,0 +1,177 @@
+/* REGISTER DESIGN - Estilo Chiflecito */
+
+:root {
+  --primary: #000000;
+  --secondary: #FFFFFF;
+  --accent: #dccf12; /* Amarillo Chiflecito */
+  --shadow: 8px 8px 0px var(--primary);
+  --radius: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', monospace;
+}
+
+body#login-view {
+  background-color: var(--secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px 20px; /* Mayor padding para móviles */
+}
+
+.login-container {
+  width: 100%;
+  max-width: 450px; /* Un poco más ancho para registro */
+  border: 2px solid var(--primary); /* Borde más marcado */
+  padding: 40px 30px;
+  background-color: var(--secondary);
+  box-shadow: var(--shadow);
+  position: relative;
+  border-radius: var(--radius);
+}
+
+/* Efecto de doble borde neobrutalista */
+.login-container::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  right: -10px;
+  bottom: -10px;
+  border: 2px solid var(--primary);
+  z-index: -1;
+  border-radius: var(--radius);
+}
+
+h1 {
+  color: var(--primary);
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: var(--primary);
+  font-size: 14px;
+}
+
+input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid var(--primary);
+  background-color: var(--secondary);
+  font-size: 16px;
+  font-weight: bold;
+  outline: none;
+  transition: all 0.2s ease;
+  border-radius: 4px;
+}
+
+input:focus {
+  box-shadow: 4px 4px 0px var(--primary);
+  transform: translate(-2px, -2px);
+}
+
+/* Botón de Registro */
+button.signIn {
+  width: 100%;
+  padding: 15px;
+  background-color: var(--accent);
+  color: var(--primary); /* Texto negro para contraste */
+  border: 2px solid var(--primary);
+  font-size: 18px;
+  font-weight: 900;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.2s ease;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+button.signIn:hover {
+  box-shadow: 4px 4px 0px var(--primary);
+  transform: translate(-3px, -3px);
+}
+
+button.signIn:active {
+  box-shadow: 0px 0px 0px var(--primary);
+  transform: translate(0, 0);
+}
+
+/* Divisor */
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+  color: var(--primary);
+  font-weight: 900;
+  font-size: 12px;
+}
+
+.divider::before, .divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 2px solid var(--primary);
+  margin: 0 10px;
+}
+
+/* Botones Sociales con Redirección */
+.social-login {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-btn {
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.social-btn img {
+  width: 60px; /* Tamaño ajustado para que quepan 3 en línea */
+  height: 60px;
+  padding: 10px;
+  border: 2px solid var(--primary);
+  background: white;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+.social-btn:hover {
+  transform: translate(-4px, -4px);
+  filter: drop-shadow(4px 4px 0px var(--primary));
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  margin-top: 30px;
+  color: var(--primary);
+  font-size: 14px;
+}
+
+.footer a {
+  color: var(--primary);
+  font-weight: 900;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.footer a:hover {
+  background-color: var(--accent);
+}
