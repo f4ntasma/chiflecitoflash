@@ -8,9 +8,10 @@ export default defineConfig({
         // Agrega TODOS los HTML que se vayan creando
         main: resolve(__dirname, 'index.html'),
         login: resolve(__dirname, 'login.html'),
-        registrer: resolve(__dirname, 'registrer.html'),
-        dashboard: resolve(__dirname, 'dashboard.html'),
+        post: resolve(__dirname, 'post.html'),
+        escribir: resolve(__dirname, 'escribir.html'),
+        perfil: resolve(__dirname, 'perfil.html'),
       }
     }
-  } // Fin de la configuración
+  }
 })
