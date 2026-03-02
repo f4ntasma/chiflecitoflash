@@ -1,9 +1,9 @@
-/* REGISTER DESIGN - Estilo Chiflecito */
+/* REGISTER DESIGN */
 
 :root {
   --primary: #000000;
   --secondary: #FFFFFF;
-  --accent: #dccf12; /* Amarillo Chiflecito */
+  --accent: #dccf12;
   --shadow: 8px 8px 0px var(--primary);
   --radius: 12px;
 }
@@ -21,13 +21,13 @@ body#login-view {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding: 40px 20px; /* Mayor padding para móviles */
+  padding: 40px 20px;
 }
 
 .login-container {
   width: 100%;
-  max-width: 450px; /* Un poco más ancho para registro */
-  border: 2px solid var(--primary); /* Borde más marcado */
+  max-width: 450px; 
+  border: 2px solid var(--primary);
   padding: 40px 30px;
   background-color: var(--secondary);
   box-shadow: var(--shadow);
@@ -35,7 +35,6 @@ body#login-view {
   border-radius: var(--radius);
 }
 
-/* Efecto de doble borde neobrutalista */
 .login-container::before {
   content: '';
   position: absolute;
@@ -87,12 +86,11 @@ input:focus {
   transform: translate(-2px, -2px);
 }
 
-/* Botón de Registro */
 button.signIn {
   width: 100%;
   padding: 15px;
   background-color: var(--accent);
-  color: var(--primary); /* Texto negro para contraste */
+  color: var(--primary);
   border: 2px solid var(--primary);
   font-size: 18px;
   font-weight: 900;
@@ -130,7 +128,6 @@ button.signIn:active {
   margin: 0 10px;
 }
 
-/* Botones Sociales con Redirección */
 .social-login {
   display: flex;
   justify-content: center;
@@ -143,7 +140,7 @@ button.signIn:active {
 }
 
 .social-btn img {
-  width: 60px; /* Tamaño ajustado para que quepan 3 en línea */
+  width: 60px; 
   height: 60px;
   padding: 10px;
   border: 2px solid var(--primary);

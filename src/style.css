@@ -1,3 +1,10 @@
+:root {
+  --primary: #2c3e50;
+  --accent: #dccf12;
+  --bg-light: #f5f7fa;
+  --text-dark: #333;
+}
+
 /* NAVBAR DESIGN */
 
 .navbar {

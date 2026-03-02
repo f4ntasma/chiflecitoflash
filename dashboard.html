@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Chiflecito</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/dashboard.css">
+</head>
+<body>
+    <!-- Reutilizamos la navbar -->
+    <nav class="navbar">
+        <div class="nav-logo">CHIFLECITO</div>
+        
+        <div class="nav-links">
+            <a href="#" class="nav-item active">Inicio</a>
+            <a href="#" class="nav-item">Mis Cursos</a>
+            <a href="#" class="nav-item">Progreso</a>
+        </div>
+
+        <div class="nav-auth">
+            <a href="index.html" class="login-link logout-btn">Salir</a>
+        </div>
+    </nav>
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="user-profile">
+                <div class="avatar">👤</div>
+                <h3>Sobrin@ Chiflecito</h3>
+                <p>Estudiante Premium</p>
+            </div>
+            <ul class="menu">
+                <li><a href="#" class="active">📊 Resumen</a></li>
+                <li><a href="#">📚 Mis Cursos</a></li>
+                <li><a href="#">📝 Exámenes</a></li>
+                <li><a href="#">🏆 Certificados</a></li>
+                <li><a href="#">⚙️ Configuración</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <div class="welcome-banner">
+                <h1>¡Hola de nuevo! 👋</h1>
+                <p>Continúa donde lo dejaste. Tienes 2 tareas pendientes para hoy.</p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="card stat-card">
+                    <h3>Cursos Completados</h3>
+                    <div class="number">12</div>
+                </div>
+                <div class="card stat-card">
+                    <h3>Horas de Estudio</h3>
+                    <div class="number">45h</div>
+                </div>
+                <div class="card stat-card">
+                    <h3>Promedio General</h3>
+                    <div class="number">18.5</div>
+                </div>
+            </div>
+
+            <div class="content-grid">
+                <div class="card recent-courses">
+                    <h2>Cursos Recientes</h2>
+                    <div class="course-item">
+                        <div class="course-info">
+                            <h4>Matemática Básica</h4>
+                            <div class="progress-bar"><div class="fill" style="width: 80%"></div></div>
+                        </div>
+                        <button class="btn-action">Continuar</button>
+                    </div>
+                    <div class="course-item">
+                        <div class="course-info">
+                            <h4>Historia del Perú</h4>
+                            <div class="progress-bar"><div class="fill" style="width: 45%"></div></div>
+                        </div>
+                        <button class="btn-action">Continuar</button>
+                    </div>
+                </div>
+
+                <div class="card notifications">
+                    <h2>Novedades</h2>
+                    <ul class="notif-list">
+                        <li>📅 Nuevo examen de Física programado para el viernes.</li>
+                        <li>🎉 ¡Felicidades! Obtuviste 20 en Química.</li>
+                        <li>📢 Mañana hay seminario en vivo a las 8pm.</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
