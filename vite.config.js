@@ -9,7 +9,8 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         login: resolve(__dirname, 'login.html'),
         registrer: resolve(__dirname, 'registrer.html'),
+        dashboard: resolve(__dirname, 'dashboard.html'),
       }
     }
-  }
+  } // Fin de la configuración
 })
